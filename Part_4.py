@@ -56,8 +56,6 @@ def get_path():
   n = len(coordinates[:,0])
   l = list(range(n))
   np.random.shuffle(l)
-  l.remove(5)
-  l = [5] + l
   return l
 
 def get_path_length(path):
@@ -128,7 +126,7 @@ def next_generation(population):
   sortedindex = np.argsort(fitness)
   return population[sortedindex], fitness[sortedindex]
 
-generation_size = 3000
+generation_size = 300
 n_population=1000
 population, fitness  = create_initial_population(n_population)
 
