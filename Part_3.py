@@ -71,5 +71,5 @@ for i in range(len(coordinates[:,0])-1):
     path.append(dist_list.index(min(dist_list)))
 length_of_my_algorithm = get_path_length(path)
 
-print('Length of my algorithm is: ' + str(length_of_my_algorithm))
+print('Length of my algorithm is: ' + str(length_of_my_algorithm) + ' km')
 
